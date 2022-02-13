@@ -28,5 +28,15 @@ docker container stop docker-container-name
 ```
 ---
 ## Documentation
+
+[Docker Registry](https://hub.docker.com/repository/docker/fencarnacao/demo-product-core)
+
 ### Dockerfile
 - [Here](https://github.com/filipe11402/products-core/blob/main/Dockerfile)
+
+## References
+- [Docker Docs](https://docs.docker.com/get-started/)
+- [Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial)
+
+## Changelog
+- [Here](https://github.com/filipe11402/demo-docker-core/commits/main)
