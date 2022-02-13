@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,6 +12,7 @@ using products_core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace products_core
@@ -34,6 +36,7 @@ namespace products_core
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "products_core", Version = "v1" });
             });
 
+            services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddScoped<IProductRepository, ProductRepository>();
         }
 
