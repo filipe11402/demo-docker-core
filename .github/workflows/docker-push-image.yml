@@ -2,9 +2,9 @@ name: 'Publish Docker Image to Docker Hub'
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
 
